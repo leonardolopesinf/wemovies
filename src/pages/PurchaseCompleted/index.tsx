@@ -1,10 +1,15 @@
 import React from "react";
+import MessageBox from "../../components/MessageBox";
+import image from "../../assets/purchase-img.svg";
 
 const PurchaseCompleted: React.FC = () => {
   return (
-    <>
-      <>PurchaseCompleted</>
-    </>
+    <MessageBox
+      buttonMessage="VOLTAR"
+      image={image}
+      message="Compra realizada com sucesso!"
+      route="/"
+    />
   );
 };
 

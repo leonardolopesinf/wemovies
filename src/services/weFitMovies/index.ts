@@ -11,7 +11,7 @@ export const getWeFitMovies = async () => {
     const movies: WeFitMovies.Get.Response = (await weFitMovies.get("/movies"))
       .data;
 
-    return movies;
+    return movies.products;
   } catch {
     const errorMessage = "Parece que não há nada por aqui :(";
 
